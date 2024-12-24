@@ -1,0 +1,11 @@
+name: First Workflow
+on: workflow_dispatch  # Allow manual trigger 
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Say hello 
+        run: echo "Hello world."
+      - name: Say Goodbye 
+        run: echo "Good bye. "
+        
